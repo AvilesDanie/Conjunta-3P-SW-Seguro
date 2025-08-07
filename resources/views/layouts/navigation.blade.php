@@ -75,6 +75,8 @@
                         <span class="text-green-600">(Bodega)</span>
                     @elseif(Auth::user()->hasRole('Ventas'))
                         <span class="text-purple-600">(Ventas)</span>
+                    @elseif(Auth::user()->hasRole('Pagos'))
+                        <span class="text-yellow-600">(Pagos)</span>
                     @endif
                 </span>
                 <form method="POST" action="{{ route('logout') }}">
