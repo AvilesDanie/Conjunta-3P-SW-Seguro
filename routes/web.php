@@ -173,4 +173,5 @@ Route::middleware(['role:Pagos'])->group(function () {
 Route::post('crearTokenAcceso',[UserController::class, 'crearTokenAcceso'])->name("crearTokenAcceso");
 Route::post('crearTokenAccesoCliente',[ClientController::class, 'crearTokenAccesoCliente'])->name("crearTokenAccesoCliente");
 
+
 require __DIR__.'/auth.php';
